@@ -20,15 +20,16 @@ from __future__ import unicode_literals
 from setuptools import setup, find_packages
 
 EXTRA_REQUIREMENTS = {
-    'csv': ['unicodecsv'],
     'cli': ['click', 'requests', 'requests-cache'],
+    'csv': ['unicodecsv'],
+    'detect': ['file-magic'],
     'html': ['lxml'],  # apt: libxslt-dev libxml2-dev
     'ods': ['lxml'],
     'parquet': ['parquet>=1.1'],
+    'pdf': ['pdfminer.six'],
     'xls': ['xlrd', 'xlwt'],
     'xlsx': ['openpyxl'],
     'xpath': ['lxml'],
-    'detect': ['file-magic'],
 }
 EXTRA_REQUIREMENTS['all'] = sum(EXTRA_REQUIREMENTS.values(), [])
 INSTALL_REQUIREMENTS = ['six'] + EXTRA_REQUIREMENTS['csv']
@@ -55,7 +56,7 @@ setup(name='rows',
       ),
       install_requires=INSTALL_REQUIREMENTS,
       extras_require=EXTRA_REQUIREMENTS,
-      keywords='tabular table csv xls xlsx xpath ods sqlite html rows data opendata',
+      keywords='tabular table csv xls xlsx xpath ods sqlite html pdf rows data opendata',
       entry_points={
           'console_scripts': [
               'rows = rows.cli:cli',
