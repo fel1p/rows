@@ -78,6 +78,7 @@ FILE_EXTENSIONS = {
         'txt': 'text/txt',
         'xls': 'application/vnd.ms-excel',
         'xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        'pdf': 'application/pdf',
 }
 MIME_TYPE_TO_PLUGIN_NAME = {
         'application/json': 'json',
@@ -89,6 +90,7 @@ MIME_TYPE_TO_PLUGIN_NAME = {
         'text/csv': 'csv',
         'text/html': 'html',
         'text/txt': 'txt',
+        'application/pdf': 'pdf',
 }
 
 

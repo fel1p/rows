@@ -67,5 +67,8 @@ if plugins.xlsx:
 if plugins.parquet:
     import_from_parquet = plugins.parquet.import_from_parquet
 
+if plugins.pdf:
+    import_from_pdf = plugins.pdf.import_from_pdf
+
 
 __version__ = '0.3.2dev0'

@@ -54,3 +54,8 @@ try:
     from . import plugin_parquet as parquet
 except ImportError:
     parquet = None
+
+try:
+    from . import plugin_pdf as pdf
+except ImportError:
+    pdf = None
