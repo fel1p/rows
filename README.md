@@ -14,3 +14,7 @@ start **working with the data** instead of **trying to parse it**. It is also
 locale-and-unicode aware. :)
 
 Want to learn more? [Read the documentation](http://turicas.info/rows).
+
+# customs
+
+update da dependência "import_from_xsl";
