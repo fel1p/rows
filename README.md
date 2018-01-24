@@ -17,4 +17,4 @@ Want to learn more? [Read the documentation](http://turicas.info/rows).
 
 # customs
 
-update da dependência "import_from_xsl";
+- [ ] update da dependência "import_from_xsl";
