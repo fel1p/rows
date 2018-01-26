@@ -17,4 +17,6 @@ Want to learn more? [Read the documentation](http://turicas.info/rows).
 
 # customs
 
+- [ ] implementar feature drunk_jump() 
 - [ ] update da dependência "import_from_xsl";
+
